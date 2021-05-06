@@ -1,5 +1,5 @@
 resource "aws_security_group" "web-node" {
-  name        = "web-node"
+  name        = var.sg_name
   description = "Web Security Group"
   ingress {
     from_port   = 80
